@@ -223,8 +223,8 @@ ActiveRecord::Schema.define(version: 20131014160456) do
     t.string   "state",                          default: "pending", null: false
     t.boolean  "phone_verified",                 default: false,     null: false
     t.boolean  "has_video"
-    t.integer  "organisation_id"
     t.string   "forwarded_for"
+    t.integer  "organisation_id"
     t.string   "confirmation_token"
     t.datetime "confirmed_at"
     t.string   "full_name",          limit: 767
@@ -290,7 +290,6 @@ ActiveRecord::Schema.define(version: 20131014160456) do
     t.string   "patronymic"
     t.text     "address"
     t.string   "full_name",              limit: 767
-    t.string   "unique_session_id",      limit: 20
     t.boolean  "wrong_phone",                        default: false, null: false
   end
 
