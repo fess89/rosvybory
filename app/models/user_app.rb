@@ -177,15 +177,16 @@ class UserApp < ActiveRecord::Base
   end
 
   def send_email_confirmation
-    self.confirmation_token = SecureRandom.hex(16)
+		#temporarily skipping email confirmation
+		#self.confirmation_token = SecureRandom.hex(16)
     save
-    ConfirmationMailer.email_confirmation(self).deliver
+    #ConfirmationMailer.email_confirmation(self).deliver
   end
 
   def verified?
 		#temporarily skipping phone confirmation
 		true
-		#skip_phone_verification || (verification.present? && verification.confirmed? && verification.phone_number == self.phone)
+		#	skip_phone_verification || (verification.present? && verification.confirmed? && verification.phone_number == self.phone)
   end
 
   def reviewed?
