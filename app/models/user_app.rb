@@ -183,7 +183,9 @@ class UserApp < ActiveRecord::Base
   end
 
   def verified?
-    skip_phone_verification || (verification.present? && verification.confirmed? && verification.phone_number == self.phone)
+		#temporarily skipping phone confirmation
+		true
+		#skip_phone_verification || (verification.present? && verification.confirmed? && verification.phone_number == self.phone)
   end
 
   def reviewed?
