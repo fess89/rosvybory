@@ -14,10 +14,18 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: ukrvybory_production
+  pool: 5
+  username: postgres
+  password: ukrvybory
+
 development:
   adapter: postgresql
   encoding: unicode
-  database: ukrvibory_development
+  database: ukrvybory_development
   pool: 5
   username: postgres
   password: ukrvybory
@@ -25,7 +33,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: ukrvibory_test
+  database: ukrvybory_test
   pool: 5
   username: postgres
   password: ukrvybory
