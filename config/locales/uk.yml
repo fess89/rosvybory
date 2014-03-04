@@ -1,0 +1,626 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+ru:
+  'false': нет
+  'true': да
+  formtastic:
+    required: "обязательное поле"
+    'yes': да
+    'no': нет
+  date:
+    abbr_day_names:
+    - Вс
+    - Пн
+    - Вт
+    - Ср
+    - Чт
+    - Пт
+    - Сб
+    abbr_month_names:
+    -
+    - янв.
+    - февр.
+    - марта
+    - апр.
+    - мая
+    - июня
+    - июля
+    - авг.
+    - сент.
+    - окт.
+    - нояб.
+    - дек.
+    day_names:
+    - воскресенье
+    - понедельник
+    - вторник
+    - среда
+    - четверг
+    - пятница
+    - суббота
+    formats:
+      default: ! '%d.%m.%Y'
+      long: ! '%d %B %Y'
+      short: ! '%d %b'
+    month_names:
+    -
+    - января
+    - февраля
+    - марта
+    - апреля
+    - мая
+    - июня
+    - июля
+    - августа
+    - сентября
+    - октября
+    - ноября
+    - декабря
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        few: около %{count} часов
+        many: около %{count} часов
+        one: около %{count} часа
+        other: около %{count} часа
+      about_x_months:
+        few: около %{count} месяцев
+        many: около %{count} месяцев
+        one: около %{count} месяца
+        other: около %{count} месяца
+      about_x_years:
+        few: около %{count} лет
+        many: около %{count} лет
+        one: около %{count} года
+        other: около %{count} лет
+      almost_x_years:
+        one: почти 1 год
+        few: почти %{count} года
+        many: почти %{count} лет
+        other: почти %{count} лет
+      half_a_minute: меньше минуты
+      less_than_x_minutes:
+        few: меньше %{count} минут
+        many: меньше %{count} минут
+        one: меньше %{count} минуты
+        other: меньше %{count} минуты
+      less_than_x_seconds:
+        few: меньше %{count} секунд
+        many: меньше %{count} секунд
+        one: меньше %{count} секунды
+        other: меньше %{count} секунды
+      over_x_years:
+        few: больше %{count} лет
+        many: больше %{count} лет
+        one: больше %{count} года
+        other: больше %{count} лет
+      x_days:
+        few: ! '%{count} дня'
+        many: ! '%{count} дней'
+        one: ! '%{count} день'
+        other: ! '%{count} дня'
+      x_minutes:
+        few: ! '%{count} минуты'
+        many: ! '%{count} минут'
+        one: ! '%{count} минуту'
+        other: ! '%{count} минуты'
+      x_months:
+        few: ! '%{count} месяца'
+        many: ! '%{count} месяцев'
+        one: ! '%{count} месяц'
+        other: ! '%{count} месяца'
+      x_seconds:
+        few: ! '%{count} секунды'
+        many: ! '%{count} секунд'
+        one: ! '%{count} секундy'
+        other: ! '%{count} секунды'
+    prompts:
+      day: День
+      hour: Часов
+      minute: Минут
+      month: Месяц
+      second: Секунд
+      year: Год
+  errors: &errors
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: нужно подтвердить
+      blank: требуется указать
+      confirmation: подтверждение не совпадает
+      empty: не может быть пустым
+      equal_to: может иметь лишь значение, равное %{count}
+      even: может иметь лишь нечетное значение
+      exclusion: имеет зарезервированное значение
+      greater_than: может иметь значение большее %{count}
+      greater_than_or_equal_to: может иметь значение большее или равное %{count}
+      inclusion: имеет непредусмотренное значение
+      invalid: имеет неверный формат
+      less_than: может иметь значение меньшее чем %{count}
+      less_than_or_equal_to: может иметь значение меньшее или равное %{count}
+      not_a_number: не является числом
+      not_an_integer: не является целым числом
+      odd: может иметь лишь четное значение
+      record_invalid: ! 'Возникли ошибки: %{errors}'
+      taken: уже существует
+      incorrect_nomination_source: некорректный источник выдвижения
+      too_long:
+        few: слишком большой длины (не может быть больше чем %{count} символа)
+        many: слишком большой длины (не может быть больше чем %{count} символов)
+        one: слишком большой длины (не может быть больше чем %{count} символ)
+        other: слишком большой длины (не может быть больше чем %{count} символа)
+      too_short:
+        few: недостаточной длины (не может быть меньше %{count} символов)
+        many: недостаточной длины (не может быть меньше %{count} символов)
+        one: недостаточной длины (не может быть меньше %{count} символа)
+        other: недостаточной длины (не может быть меньше %{count} символов)
+      wrong_length:
+        few: неверной длины (может быть длиной ровно %{count} символа)
+        many: неверной длины (может быть длиной ровно %{count} символов)
+        one: неверной длины (может быть длиной ровно %{count} символ)
+        other: неверной длины (может быть длиной ровно %{count} символа)
+    models:
+      user:
+        attributes:
+          current_password:
+            invalid: "Указан неверно!"
+    template:
+      body: ! 'Проблемы возникли со следующими полями:'
+      header:
+        few: ! '%{model}: сохранение не удалось из-за %{count} ошибок'
+        many: ! '%{model}: сохранение не удалось из-за %{count} ошибок'
+        one: ! '%{model}: сохранение не удалось из-за %{count} ошибки'
+        other: ! '%{model}: сохранение не удалось из-за %{count} ошибки'
+  helpers:
+    select:
+      prompt: ! 'Выберите: '
+    submit:
+      create: Создать %{model}
+      submit: Сохранить %{model}
+      update: Сохранить %{model}
+  number:
+    currency:
+      format:
+        delimiter: ! ' '
+        format: ! '%n %u'
+        precision: 2
+        separator: ','
+        significant: false
+        strip_insignificant_zeros: false
+        unit: руб.
+    format:
+      delimiter: ! ' '
+      precision: 3
+      separator: ','
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion:
+            few: миллиардов
+            many: миллиардов
+            one: миллиард
+            other: миллиардов
+          million:
+            few: миллионов
+            many: миллионов
+            one: миллион
+            other: миллионов
+          quadrillion:
+            few: квадриллионов
+            many: квадриллионов
+            one: квадриллион
+            other: квадриллионов
+          thousand:
+            few: тысяч
+            many: тысяч
+            one: тысяча
+            other: тысяч
+          trillion:
+            few: триллионов
+            many: триллионов
+            one: триллион
+            other: триллионов
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: false
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            few: байта
+            many: байт
+            one: байт
+            other: байта
+          gb: ГБ
+          kb: КБ
+          mb: МБ
+          tb: ТБ
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ' и '
+      two_words_connector: ! ' и '
+      words_connector: ! ', '
+  time:
+    am: утра
+    formats:
+      default: ! '%a, %d %b %Y, %H:%M:%S %z'
+      long: ! '%d %B %Y, %H:%M'
+      short: ! '%d %b, %H:%M'
+      time_only: '%H:%M'
+      time_first: ! '%H:%M %d.%m.%Y'
+    pm: вечера
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors
+    state_machines:
+      user_app:
+        state:
+          states:
+            pending: "Новые"
+            approved: "Утверждено"
+            rejected: "Отклонено"
+            spammed: "Спам"
+    models:
+      dislocation:
+        one: "Расстановка"
+        other: "Расстановки"
+      region:
+        one: "Округ/район"
+        other: "Округа/районы"
+      user_app:
+        one: "Заявка"
+        other: "Заявки"
+      user:
+        one: "Пользователь"
+        other: "Пользователи"
+      organisation:
+        one: "Организация"
+        other: "Организации"
+      blacklist:
+        one: 'Черный список'
+        other: 'Черный список'
+      nomination_source:
+        one: 'Источник выдвижения'
+        other: 'Источники выдвижения'
+      dislocation_control:
+        one: 'Контроль расстановки'
+        other: 'Контроль расстановки'
+      uic:
+        one: УИК
+        other: Избирательные комиссии
+      call_center/reporter:
+        one: Звонящий
+        other: Звонящие
+      call_center/report:
+        one:   Сообщение
+        other: Сообщения
+      call_center/phone_call:
+        one:   Звонок
+        other: Звонки
+      call_center/operator:
+        one:   Оператор
+        other: Операторы
+      call_center/violation:
+        one:   Нарушение
+        other: Нарушения
+      call_center/violation_category:
+        one:   Категория нарушений
+        other: Категории нарушений
+      call_center/violation_type:
+        one:   Тип нарушения
+        other: Типы нарушений
+      call_center/redirection_phone:
+        one:  Телефон для переадресации
+        other: Телефоны для переадресации
+    attributes:
+      dislocation:
+        current_role_id: Роль
+        current_role_nomination_source_id: Источник выдвижения
+        current_role_uic: УИК
+        user_current_role_got_docs: Документы выданы
+      dislocation_control:
+        kind: Тип
+        number: УИК №
+        participant_0: Участник №1
+        participant_1: Участник №2
+        participant_2: Участник №3
+        participant_3: Участник №4
+        participant_4: Участник №5
+        participant_5: Участник №6
+        participant_6: Участник №7
+        participants_count: Кол-во
+        region_parent_id: Адм.округ
+        region: Район
+        others: ""
+      nomination_source:
+        variant: Тип
+        name: Название
+      nomination_source/variants:
+        candidate: Кандидат
+        party: Партия кандидата
+        parliament: Парламентская партия
+        media: СМИ
+      verification:
+        phone_number: Телефон
+      user_current_role:
+        current_role: Роль
+        nomination_source: Источник выдвижения
+        adm_region_id: Адм регион
+        region: Регион/ТИК
+        uic: УИК
+        got_docs: Документы выданы
+      user_current_roles:
+        region: ТИК
+      organisation:
+        name: Название
+        created_at: Создано
+        updated_at: Обновлено
+      user:
+        password: Пароль
+        password_confirmation: Подтверждение пароля
+        phone: Телефон
+        wrong_phone: Неверный телефон
+        region: "Район"
+        adm_region: "Адм. округ"
+        created_at: Создано
+        updated_at: Изменено
+        roles: Роли
+        organisation: "Орг."
+        organisation_id: "Организация (НО)"
+        sign_in_count: Заходов
+        last_sign_in_at: Последний визит
+        current_sign_in_at: Текущий визит
+        current_password: Текущий пароль
+        password: Пароль
+        password_confirmation: Пароль (подтверждение)
+        last_name: Фамилия
+        first_name: Имя
+        patronymic: Отчество
+        full_name: ФИО
+        user_app_created_at: Дата заполнения заявки
+        uic: № УИК
+        current_roles: Текущие роли
+        desired_statuses: В день выборов может быть
+        user_current_roles: "Роли наблюдателя"
+        experience_count: "Прежний опыт: количество раз"
+        previous_statuses: "Прежний опыт: статусы"
+        can_be_coord_region: "Может быть ТК"
+        can_be_caller: "Может быть оп. КЦ"
+        can_be_mobile: "Может быть уч. моб. гр."
+        has_car: "Автомобиль"
+        legal_status: "Юр.образование"
+        has_video: "Видеосъёмка"
+        social_accounts: "Соцсети"
+        extra: "Дополнительные сведения"
+        year_born: Год рождения
+        place_of_birth: Место рождения
+        passport: Паспорт
+        work: Место работы
+        work_position: Должность
+        address: Адрес прописки
+        got_docs: Документы выданы
+        blacklist_info: Данные из черного списка
+        user: "Заявка"
+      region:
+        kind: Тип
+        name: Название
+        created_at: Создан
+        updated_at: Изменен
+        has_tic: есть ТИК
+      user_app:
+        can_be_observer: "Член избирательной комиссии / наблюдатель на участке"
+        can_be_mobile: "Участник мобильных групп"
+        can_be_coord_region: "Координатор участковых комиссий"
+        can_be_coord_mobile: "Координатор мобильных групп"
+        can_be_caller: "Оператор контакт-центра"
+        can_be_coord_caller: "Координатор контакт-центра"
+        can_be_prg_reserve: "ПРГ в резерве"
+        can_be_reserv: "Может выдвинуться в резерв составов УИК"
+        was_observer: "Наблюдатель"
+        was_mobile: "Участник мобильной группы"
+        was_prg: "Член ПРГ УИК"
+        was_psg: "Член ПСГ УИК"
+        was_tic_prg: "Член ПРГ ТИК"
+        was_tic_psg: "Член ПСГ ТИК"
+        was_candidate: "Кандидат"
+        was_delegate: "Доверенное лицо кандидата"
+        was_journalist: "Журналист, освещающий выборы"
+        was_coord: "Координатор"
+        was_lawyer: "Юрист с опытом работы на избирательных кампаниях"
+        desired_statuses: "Готов стать"
+        desired_status: Готов стать
+        previous_statuses: "Есть опыт"
+        created_at: "Создано"
+        updated_at: "Изменено"
+        full_name: "ФИО"
+        last_name: "Фамилия"
+        first_name: "Имя"
+        patronymic: "Отчество"
+        phone: "Телефон"
+        phone_verified: "Телефон проверен"
+        phone_formatted: "Телефон (форм.)"
+        adm_region: "Округ"
+        region: "Район"
+        uic: "№ УИК"
+        has_car: "Автомобиль"
+        has_video: "Видеосъемка"
+        legal_status: "Юр. образование"
+        experience_count: "Опыт: кол-во"
+        extra: "Доп. сведения"
+        social_accounts: "Соц. аккаунты"
+        year_born: "Год рождения"
+        sex_male: "Пол"
+        ip: "IP"
+        organisation: "Орг."
+        current_roles: "Текущие статусы"
+        user: "Пользователь"
+      call_center/operator:
+        full_name: ФИО
+        first_name: Имя
+        last_name: Фамилия
+        patronymic: Отчество
+        phone_calls_count: Звонков
+        completed_phone_calls_count: Завершенных звонков
+        started_phone_calls_count: Не завершенных звонков
+        reports_count: Записано сообщений
+        violations_count: Записано жалоб
+        last_phone_call: Последний звонок
+      call_center/reporter:
+        user_id: Звонящий
+        uic_id: Расположение
+        role: Роль
+        dislocation: Человек
+        current_role: Роль
+        full_name: ФИО
+        known: Зарегистрирован
+        phone: Телефон
+      call_center/report:
+        approved: Одобрено
+        uic: Участок
+        text: Текст
+        url: Ссылка
+        phone: Телефон
+        created_at: Время
+        updated_at: Обновлено
+        reporter: Позвонивший
+        current_role: Роль
+        needs_mobile_group: Требуется вызов мобильной группы
+        violation: Нарушение
+        violation_type: Тип нарушения
+        reporter_uic_id: Участок
+        violation_violation_type_id: Тип нарушения
+      call_center/phone_call:
+        status: Статус
+        uic: Участок
+        reporter: Позвонивший
+        text: Сообщение
+        all_params_loginid: Номер аппарата
+        operator: Оператор
+      call_center/violation_type:
+        name: Название
+        reports_count: Сообщений
+        violations_count: Нарушений
+      call_center/violation_category:
+        name: Название
+        reports_count: Сообщений
+        violations_count: Нарушений
+      call_center/redirection_phone:
+        name:  Название
+        number: Номер телефона
+    values:
+      call_center/phone_call:
+        status:
+          started: Начат
+          completed: Отработан
+  dislocation:
+    errors:
+      one: "%{count} ошибка"
+      few: "%{count} ошибки"
+      many: "%{count} ошибок"
+      other: "%{count} ошибок"
+  user_app:
+    status:
+      observer: "Член избирательной комиссии / наблюдатель на участке"
+      mobile: "Участник мобильных групп"
+      coord_region: "Координатор участковых комиссий"
+      coord_mobile: "Координатор мобильных групп"
+      caller: "Оператор контакт-центра"
+      coord_caller: "Координатор контакт-центра"
+      prg: "ПРГ УИК"
+      psg: "ПСГ УИК"
+      tic_prg: "ПРГ ТИК"
+      tic_psg: "ПСГ ТИК"
+      lawyer: "Юрист с опытом работы на избирательных кампаниях"
+      candidate: "Кандидат"
+      delegate: "Доверенное лицо кандидата"
+      journalist: "Журналист"
+      coord: "Координатор"
+      prg_reserve: "ПРГ в резерве"
+      no_status: ""
+  user_apps:
+    rejected:
+      valid: 'Заявка содержит ошибки'
+      approved: 'Заявка уже подтверждена'
+      email_missing: 'Отсутствует email'
+      email: 'Уже есть заявка с таким email-ом'
+      phone: 'Уже есть заявка с таким телефоном'
+    send_group_sms:
+      messages_sent: 'Сообщения отправлены'
+    send_group_email:
+      messages_sent: 'Сообщения отправлены'
+  enumerize:
+    region:
+      kind:
+        city: "Город"
+        adm_region: "Админ. регион"
+        mun_region: "Мун. регион"
+  active_admin:
+    batch_actions:
+      labels:
+        give_out_docs: Выдать документы
+        new_group_sms: "Отправить SMS"
+        new_group_email: "Отправить почту"
+        group_accept: "Принять"
+    edit_model: "Редактирование %{model}"
+    menu:
+      dictionaries: Справочники
+      call_center: Колл-центр
+    scopes:
+      with_current_roles: Все
+  views:
+    pagination:
+      first: "&laquo; В начало"
+      last: "В конец &raquo;"
+      previous: "&lsaquo; Назад"
+      next: "Вперед &rsaquo;"
+      truncate: "..."
+      actions:
+        pagination_on: "Показать по 30 записей"
+        pagination_off: "Показать по 200 записей"
+    call_center:
+      uic:
+        no_reports: Зафиксированных обращений нет
+        no_uic:
+          header: УИК не определён
+          notice: "Как только введёте номер УИК в форме, он здесь появится"
+      reports:
+        new:
+          access_denied: "Доступ запрещён"
