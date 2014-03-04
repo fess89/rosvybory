@@ -4,7 +4,7 @@ require "bundler/capistrano"
 require "rvm/capistrano"
 
 set :application, "rosvybory"
-set :repository,  "git@github.com:fbkinfo/rosvybory.git"
+set :repository,  "git@github.com:fess89/ukrvybory.git"
 set :use_sudo, false
 set :deploy_via, :remote_cache
 default_run_options[:pty] = true
