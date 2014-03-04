@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -13,6 +14,8 @@ gem 'formtastic-bootstrap'#, github: 'mjbellantoni/formtastic-bootstrap'
 gem 'x-editable-rails'
 gem 'select2-rails'
 gem 'handlebars_assets'
+
+#gem 'ruby-debug-ide', '0.4.22', :group => [:development, :test]
 
 group :production do
   gem 'dalli'
