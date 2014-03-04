@@ -140,7 +140,7 @@ class UserApp < ActiveRecord::Base
   end
 
   def confirmed?
-    confirmed_at ? true : false
+      confirmed_at ? true : false
   end
 
   def can_be(status_value)
@@ -150,7 +150,6 @@ class UserApp < ActiveRecord::Base
   def was(status_value)
     previous_statuses & status_value == status_value
   end
-
 
   self.all_future_statuses_with_archived.each do |status_value, status_name|
     method_n = "can_be_#{status_name}"
@@ -185,8 +184,8 @@ class UserApp < ActiveRecord::Base
 
   def verified?
 		#temporarily skipping phone confirmation
-		true
-		#	skip_phone_verification || (verification.present? && verification.confirmed? && verification.phone_number == self.phone)
+		#true
+		skip_phone_verification || (verification.present? && verification.confirmed? && verification.phone_number == self.phone)
   end
 
   def reviewed?
