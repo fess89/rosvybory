@@ -4,8 +4,7 @@ class UsersController < ApplicationController
 
   include UserAppsHelper
 
-  before_filter :expose_current_roles,
-                only: [:new, :edit, :group_new, :dislocate]
+  before_filter :expose_current_roles, only: [:new, :edit, :group_new, :dislocate]
   before_filter :set_user, only: [:edit, :update, :dislocate, :letter, :direct_login]
 
   def letter

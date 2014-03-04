@@ -240,7 +240,6 @@ nomination_sources.each do |variant, names|
   end
 end
 
-
 Rake::Task['import_uics'].invoke
 
 violation_types = {
@@ -299,6 +298,12 @@ violation_types.each do |category_name, type_names|
   end
 end
 
-
+# creating an admin account
+user = User.create!(:phone => '1234567890', 
+                    :email => 'ukrvybory.2014@gmail.com', 
+                    :password => 'password', 
+                    :password_confirmation => 'password')
+user.add_role :admin
+user.save!
 
 

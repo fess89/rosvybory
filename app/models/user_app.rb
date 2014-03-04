@@ -79,7 +79,7 @@ class UserApp < ActiveRecord::Base
     end
   end
 
-  SOCIAL_ACCOUNTS = {vk: "ВКонтакте", fb: "Facebook", twitter: "Twitter", lj: "LiveJournal" , ok: "Одноклассники"}
+  SOCIAL_ACCOUNTS = {vk: "ВКонтакте", fb: "Facebook", twitter: "Twitter", lj: "LiveJournal"}
   SOCIAL_ACCOUNTS.each do |provider_key, provider_name|
     method_n = 'social_'+provider_key.to_s
     define_method(method_n) { social_accounts[provider_key] }
@@ -186,7 +186,7 @@ class UserApp < ActiveRecord::Base
   def verified?
 		#temporarily skipping phone confirmation
 		true
-		#	skip_phone_verification || (verification.present? && verification.confirmed? && verification.phone_number == self.phone)
+		skip_phone_verification || (verification.present? && verification.confirmed? && verification.phone_number == self.phone)
   end
 
   def reviewed?

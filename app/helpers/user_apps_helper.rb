@@ -39,8 +39,7 @@ module UserAppsHelper
         vk: "http://vk.com",
         fb: "https://www.facebook.com",
         twitter: "https://twitter.com",
-        lj: "http://livejournal.com" ,
-        ok: "http://www.odnoklassniki.ru"
+        lj: "http://livejournal.com"
     }[provider]
   end
 
@@ -49,8 +48,7 @@ module UserAppsHelper
         vk: "http://vk.com/<...>",
         fb: "https://www.facebook.com/<...> или /profile.php?id=<...>",
         twitter: "https://twitter.com/<...>",
-        lj: "http://<...>.livejournal.com" ,
-        ok: "http://www.odnoklassniki.ru/profile/<...>"
+        lj: "http://<...>.livejournal.com"
     }[provider]
   end
 
