@@ -19,13 +19,17 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-ru:
-  'false': нет
-  'true': да
+uk:
+  yes: "Так"
+  no: "Ні"
+  has: "Так"
+  doesnt_have: "Ні"
+  'false': ні
+  'true': так
   formtastic:
     required: "обязательное поле"
-    'yes': да
-    'no': нет
+    'yes': так
+    'no': ні
   date:
     abbr_day_names:
     - Вс

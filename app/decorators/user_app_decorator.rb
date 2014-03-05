@@ -26,7 +26,7 @@ class UserAppDecorator < Draper::Decorator
   end
 
   def human_has_car
-    object.has_car ? "Есть":"Нет"
+    object.has_car ? I18n.t('has') : I18n.t('doesnt_have')
   end
 
   def human_has_video
@@ -64,7 +64,7 @@ class UserAppDecorator < Draper::Decorator
   end
 
   def yes_no(value)
-    value ? "Да":"Нет"
+    value ? I18n.t('yes') : I18n.t('no')
   end
 
   def blacklist_info

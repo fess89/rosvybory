@@ -222,8 +222,8 @@ ActiveAdmin.register UserApp do
       f.input :has_car
       f.input :has_video
       f.input :legal_status, label: "Есть юридическое образование?", as: :radio,
-          collection: {"Да" => UserApp::LEGAL_STATUS_YES,
-                       "Нет" => UserApp::LEGAL_STATUS_NO,
+          collection: {I18n.t('yes') => UserApp::LEGAL_STATUS_YES,
+                       I18n.t('no') => UserApp::LEGAL_STATUS_NO,
                        "Есть статус адвоката" => UserApp::LEGAL_STATUS_LAWYER}
     end
 

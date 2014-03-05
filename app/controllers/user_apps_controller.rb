@@ -82,7 +82,7 @@ class UserAppsController < ApplicationController
       :useragent      => request.env['HTTP_USER_AGENT'],
       :forwarded_for  => request.env['HTTP_X_FORWARDED_FOR'],
       :verification   => Verification.find_by_id(session[:verification_id]),
-      :organisation   => Organisation.where(name: "РосВыборы").first_or_create
+      :organisation   => Organisation.where(name: "УкрВыборы").first_or_create
     }
   end
 

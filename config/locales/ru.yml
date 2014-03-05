@@ -20,6 +20,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 ru:
+  'yes': "Да"
+  'no': "Нет"
+  'has': "Да"
+  'doesnt_have': "Нет"
   'false': нет
   'true': да
   formtastic:
