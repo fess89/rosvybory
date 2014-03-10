@@ -10,13 +10,13 @@
   =mail_to AppConfig["developers_email"], nil, subject: "Проблемы с заполнением формы"
 
 = semantic_form_for @user_app do |f|
-
   = f.inputs "В каком качестве вы готовы участвовать в общественном контроле за выборами?", :id => "user_app_desired_statuses", :class => ("text-error" if @user_app.errors[:desired_statuses].any?) do
     -@user_app.errors[:desired_statuses].each do |err|
       %span.text-error=err
       %br
     -UserApp.future_statuses_methods.each do | method_name|
-      = f.input method_name, :as => :boolean
+      -unless method_name.include?("coord")
+        = f.input method_name, :as => :boolean
   %br
   = f.input :adm_region, :as => :select, :collection => Region.adm_regions.pluck(:name, :id), :input_html => {:style => "width: 280px;", :class => "selectify", "data-role" => "adm-region-select"}
   = f.input :region, :as => :select, :collection => (@user_app.adm_region ? @user_app.adm_region.regions.pluck(:name, :id) : []), :input_html => {:style => "width: 280px;", "data-role" => "region-select"}, hint: "Можно оставить пустым или выбрать конкретный район" #ширина прописана inline, чтобы select2 её правильно подхватил, через css он не понимает
