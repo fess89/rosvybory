@@ -328,7 +328,7 @@ uk:
         one: 'Контроль расстановки'
         other: 'Контроль расстановки'
       uic:
-        one: УИК
+        one: ДВК
         other: Избирательные комиссии
       call_center/reporter:
         one: Звонящий
@@ -358,11 +358,11 @@ uk:
       dislocation:
         current_role_id: Роль
         current_role_nomination_source_id: Источник выдвижения
-        current_role_uic: УИК
+        current_role_uic: ДВК
         user_current_role_got_docs: Документы выданы
       dislocation_control:
         kind: Тип
-        number: УИК №
+        number: ДВК №
         participant_0: Участник №1
         participant_1: Участник №2
         participant_2: Участник №3
@@ -388,11 +388,11 @@ uk:
         current_role: Роль
         nomination_source: Источник выдвижения
         adm_region_id: Адм регион
-        region: Регион/ТИК
-        uic: УИК
+        region: Регион/ОВК
+        uic: ДВК
         got_docs: Документы выданы
       user_current_roles:
-        region: ТИК
+        region: ОВК
       organisation:
         name: Название
         created_at: Создано
@@ -420,7 +420,7 @@ uk:
         patronymic: Отчество
         full_name: ФИО
         user_app_created_at: Дата заполнения заявки
-        uic: № УИК
+        uic: № ДВК
         current_roles: Текущие роли
         desired_statuses: В день выборов может быть
         user_current_roles: "Роли наблюдателя"
@@ -448,7 +448,7 @@ uk:
         name: Название
         created_at: Создан
         updated_at: Изменен
-        has_tic: есть ТИК
+        has_tic: есть ОВК
       user_app:
         can_be_observer: "Член избирательной комиссии / наблюдатель на участке"
         can_be_mobile: "Участник мобильных групп"
@@ -457,13 +457,13 @@ uk:
         can_be_caller: "Оператор контакт-центра"
         can_be_coord_caller: "Координатор контакт-центра"
         can_be_prg_reserve: "ПРГ в резерве"
-        can_be_reserv: "Может выдвинуться в резерв составов УИК"
+        can_be_reserv: "Может выдвинуться в резерв составов ДВК"
         was_observer: "Наблюдатель"
         was_mobile: "Участник мобильной группы"
-        was_prg: "Член ПРГ УИК"
-        was_psg: "Член ПСГ УИК"
-        was_tic_prg: "Член ПРГ ТИК"
-        was_tic_psg: "Член ПСГ ТИК"
+        was_prg: "Член ПРГ ДВК"
+        was_psg: "Член ПСГ ДВК"
+        was_tic_prg: "Член ПРГ ОВК"
+        was_tic_psg: "Член ПСГ ОВК"
         was_candidate: "Кандидат"
         was_delegate: "Доверенное лицо кандидата"
         was_journalist: "Журналист, освещающий выборы"
@@ -483,7 +483,7 @@ uk:
         phone_formatted: "Телефон (форм.)"
         adm_region: "Округ"
         region: "Район"
-        uic: "№ УИК"
+        uic: "№ ДВК"
         has_car: "Автомобиль"
         has_video: "Видеосъемка"
         legal_status: "Юр. образование"
@@ -568,10 +568,10 @@ uk:
       coord_mobile: "Координатор мобильных групп"
       caller: "Оператор контакт-центра"
       coord_caller: "Координатор контакт-центра"
-      prg: "ПРГ УИК"
-      psg: "ПСГ УИК"
-      tic_prg: "ПРГ ТИК"
-      tic_psg: "ПСГ ТИК"
+      prg: "ПРГ ДВК"
+      psg: "ПСГ ДВК"
+      tic_prg: "ПРГ ОВК"
+      tic_psg: "ПСГ ОВК"
       lawyer: "Юрист с опытом работы на избирательных кампаниях"
       candidate: "Кандидат"
       delegate: "Доверенное лицо кандидата"
@@ -623,8 +623,8 @@ uk:
       uic:
         no_reports: Зафиксированных обращений нет
         no_uic:
-          header: УИК не определён
-          notice: "Как только введёте номер УИК в форме, он здесь появится"
+          header: ДВК не определён
+          notice: "Как только введёте номер ДВК в форме, он здесь появится"
       reports:
         new:
           access_denied: "Доступ запрещён"
