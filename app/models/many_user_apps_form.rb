@@ -13,7 +13,7 @@ class ManyUserAppsForm
     end
   end
 
-  def   initialize(organisation, params = {})
+  def initialize(organisation, params = {})
     @organisation = organisation || Organisation.where(name: "РосВыборы").first_or_create
     @user_apps = []
     self.ignore_existing = (params[:ignore_existing] != "0")
@@ -34,6 +34,8 @@ class ManyUserAppsForm
   end
 
   def save
+    #setting status to imported
+    @user_apps.map { |app| app.set_imported }
     @user_apps.each &:save
     results_count(:failed) == 0
   end

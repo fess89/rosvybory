@@ -62,6 +62,7 @@ class UserApp < ActiveRecord::Base
 
   state_machine initial: :pending do
     state :approved
+    state :imported
     state :pending
     state :rejected
     state :spammed
@@ -73,9 +74,13 @@ class UserApp < ActiveRecord::Base
     event :reject do
       transition all => :rejected
     end
+    
+    event :set_imported do
+      transition :pending => :imported
+    end
 
     event :approve do
-      transition [:pending, :rejected] => :approved
+      transition [:pending, :rejected, :imported] => :approved
     end
   end
 

@@ -33,6 +33,7 @@ gem 'resque_mailer'
 gem 'redis'
 
 # Use SCSS for stylesheets
+gem 'sass', '3.2.13'  # prevents lots of stupid warnings
 gem 'sass-rails', '~> 4.0.0'
 gem "less-rails"
 gem 'haml-rails'
